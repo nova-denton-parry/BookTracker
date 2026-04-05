@@ -1,0 +1,216 @@
+/* css reset */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* template styling */
+
+header {
+    text-align: center;
+    font-size: 1.1em;
+    padding: 1% 0;
+    background-color: lavender;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1% 0;
+    background-color: lavender;
+    width: 100%;
+    margin-top: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: lavenderblush;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.1em;
+    padding: 0.8% 0;
+}
+
+nav form input[type=submit] {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav form input:hover {
+    background-color: lavender;
+}
+
+nav span {
+    border-right: 2px solid lavender;
+}
+
+/* other styling */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    font-size: 1.2em;
+    width: 50%;
+    border-spacing: 0;
+    margin: 2% auto;
+}
+
+table input[type=submit] {
+    font-size: 1em;
+    padding: 5px 10px;
+    min-width: 100px;
+}
+
+th {
+    text-align: left;
+    padding-right: 2%;
+}
+
+.book-details th {
+    text-align: right;
+}
+
+.book-details td {
+    width: 20%;
+}
+
+td {
+    min-width: 5%;
+    padding-left: 3%;
+}
+
+th, td {
+    border-bottom: 1px solid lavender;
+    text-wrap: nowrap;
+    padding: 1%;
+    min-width: 5%;
+}
+
+td:first-child {
+    text-wrap: balance;
+    min-width: 20%;
+}
+
+tr th{
+    background-color: lavender;
+}
+
+tr:hover {
+    background-color: lavenderblush;
+}
+
+.button {
+    background-color: lavender;
+    padding: 0.5%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button:hover {
+    box-shadow: 5px 5px 5px inset rgb(209, 209, 230);
+}
+
+.book-comment-div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.full-book-list {
+    width: 80%;
+}
+
+.full-book-list th {
+    text-align: left;
+    padding-right: 0;
+}
+
+.full-book-list td {
+    padding-left: 0;
+}
+
+.center-button {
+    margin: 1% auto;
+}
+
+label {
+    font-size: 1.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+input[type=text] {
+    border: 2px solid lavenderblush;
+    font-size: 1em;
+}
+
+input {
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 40%;
+    margin: 2% auto;
+    gap: 3% 2%;
+    align-items: start;
+    min-height: 500px;
+}
+
+.two-col-grid label {
+    text-align: right;
+    background-color: lavender;
+}
+
+.two-col-grid * {
+    padding: 2%;
+}
+
+select {
+    background-color: lavenderblush;
+}
+
+textarea {
+    background-color: lavenderblush;
+    min-height: 100px;
+}
+
+.two-col-grid input[type=submit] {
+    grid-column: 1 / span 2;
+}
+
+form:has(.center-button) {
+    display: flex;
+    justify-content: center;
+}
+
+.mini-form {
+    margin: 1% auto;
+    text-align: center;
+}
+
+.mini-form input[type=submit] {
+    display: block;
+    margin: 2% auto;
+}
+
+.mini-form input[type=text] {
+    border-color: lavender;
+}
+
+.center {
+    min-width: 100vw;
+    margin: 3% auto;
+    text-align: center;
+}
